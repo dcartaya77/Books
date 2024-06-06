@@ -18,7 +18,7 @@ export const ReadedLibrary:React.FC<Props> = ({library, onBooks} ) =>{
             {library.map(({book})=>{
                 if(book.isReaded)
                     return (
-                        <SingleBook cover={book.cover} ISBN={book.ISBN} key={book.ISBN} onBooks={onBooks} action={'remove'}/>
+                        <SingleBook cover={book.cover} ISBN={book.ISBN} key={book.ISBN} onBooks={onBooks} action={'remove'} pages={0}/>
                     )
             })}
         </Stack>
