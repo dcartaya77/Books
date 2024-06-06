@@ -1,6 +1,6 @@
 
 export default function getBooks(){
-  return fetch('http://localhost:5173/books.json')
+  return fetch('https://dcartaya77.github.io/Books/books.json')
     .then(resp=>resp.json())
     .then(response=>{
         const {library} = response
