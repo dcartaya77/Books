@@ -17,3 +17,5 @@ export interface Author {
   name: string
   otherBooks: string[]
 }
+
+export type PickISBN = Pick<InfoBook, 'ISBN'>;
